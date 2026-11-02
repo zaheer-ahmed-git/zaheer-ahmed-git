@@ -41,15 +41,15 @@
 </div>
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=NxtGen-Dev-ZAH&theme=blueberry&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=NxtGen-Dev-ZAH&theme=blueberry&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=NxtGen-Dev-ZAH&theme=blueberry&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=zaheer-ahmed-git&theme=blueberry&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=zaheer-ahmed-git&theme=blueberry&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=zaheer-ahmed-git&theme=blueberry&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=NxtGen-Dev-ZAH&icon=5&color=1)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=zaheer-ahmed-git&icon=5&color=1)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 <!---
-NxtGen-Dev-ZAH/NxtGen-Dev-ZAH is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+zaheer-ahmed-git/zaheer-ahmed-git is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
