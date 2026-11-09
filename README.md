@@ -1,7 +1,7 @@
 # About Me:
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=24&duration=2000&pause=1000&center=true&vCenter=true&random=false&width=435&lines=Hi+there!+I'm+Zaheer+Ahmed" />
+    <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=800&size=24&duration=2000&pause=1000&center=true&vCenter=true&random=false&width=480&lines=Hi+there!+I'm+Zaheer+Ahmed" />
   </a>
   <h2 align="center">
     I build LLM-powered chatbots, backend microservices, and cloud-native solutions with LangChain, Next.js, FastAPI, and Docker.
