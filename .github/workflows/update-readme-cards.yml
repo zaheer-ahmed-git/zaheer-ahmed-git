@@ -1,0 +1,60 @@
+name: Update README cards
+
+on:
+  schedule:
+    # Refresh once per day (UTC). Profile READMEs should not hammer public APIs.
+    - cron: "0 4 * * *"
+  push:
+    paths:
+      - ".github/workflows/update-readme-cards.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: >-
+            username=${{ github.repository_owner }}&show_icons=true&theme=blueberry&hide_border=false&include_all_commits=false&count_private=true
+          path: profile/stats.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+          fail_on_error: true
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: >-
+            username=${{ github.repository_owner }}&layout=compact&theme=blueberry&hide_border=false&langs_count=6
+          path: profile/top-langs.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+          fail_on_error: true
+
+      - name: Generate streak card
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: >-
+            user=${{ github.repository_owner }}&theme=blueberry&hide_border=false&disable_animations=true
+          path: profile/streak.svg
+          token: ${{ secrets.PROFILE_STATS_TOKEN || github.token }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          if git diff --cached --quiet; then
+            echo "No card changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: refresh profile README stats cards"
+          git pull --rebase --autostash origin main
+          git push
